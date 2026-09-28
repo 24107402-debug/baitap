@@ -1,0 +1,18 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+button {
+    padding: 8px;
+    margin: 5px;
+}
+
+select,
+input {
+    padding: 6px;
+}
+
+img {
+    margin: 10px;
+}

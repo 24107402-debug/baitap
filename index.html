@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mua sắm đơn giản</title>
+</head>
+
+<body>
+
+    <h1>MUA SẮM ĐƠN GIẢN</h1>
+
+    <label>Sản phẩm:</label>
+
+    <select id="product" onchange="changeImage()">
+        <option value="ao">Áo</option>
+        <option value="quan">Quần</option>
+        <option value="giay">Giày</option>
+    </select>
+
+    <br><br>
+
+    <label>Số lượng:</label>
+
+    <input type="number" id="quantity" value="1" min="1">
+
+    <br><br>
+
+    <img
+        id="productImage"
+        src="images/áo.png"
+        width="200"
+        height="200"
+        alt="Hình sản phẩm"
+    >
+
+    <br><br>
+
+    <button onclick="calculate()">TÍNH TIỀN</button>
+
+    <p>Tiền hàng: <span id="total">0đ</span></p>
+
+    <p>Giảm giá: <span id="discount">0đ</span></p>
+
+    <p>Phải trả: <span id="pay">0đ</span></p>
+
+    <br>
+
+    <button onclick="changeColor('blue')">Xanh</button>
+    <button onclick="changeColor('red')">Đỏ</button>
+    <button onclick="changeColor('yellow')">Vàng</button>
+
+    <br><br>
+
+    <button onclick="showPrice()">XEM BẢNG GIÁ</button>
+
+    <div id="priceList"></div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
